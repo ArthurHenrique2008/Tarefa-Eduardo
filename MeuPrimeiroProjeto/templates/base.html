@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de produtos </title>
+</head>
+<body>
+
+Meu primmeiro modelo de site
+<a href="adicionar">Nova Categoria</a>
+
+<h1>Produtos cadastrados</h1>
+{% for listaDeCategoria in listaDeCategorias %}
+    <p> {{ listaDeCategoria.nome }}
+        <a href="editar/{{listaDeCategoria.id}}/">Editar</a>
+        <a href="excluir/{{listaDeCategoria.id}}/">Excluir</a>
+    </p>
+{% endfor %}
+# python manage.py runserver
+</body>
+</html>
